@@ -18,3 +18,6 @@ plt.scatter(Centroids["weight"],Centroids["waffle_calories"],c='red')
 plt.xlabel("Weight")
 plt.ylabel("Waffle Calories")
 plt.show()
+
+df.boxplot(column=["weight","waffle_calories"],grid=False)
+plt.show()
