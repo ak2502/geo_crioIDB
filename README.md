@@ -10,3 +10,5 @@ This is my project for #IBelieveinDoing Projects Edition program from Crio.Do
 3) Cluster the data using K-means clustering
 
 4) Finding a suitable K using trial and error
+
+5) Plotting Boxplot and making inference for the desired value of K
