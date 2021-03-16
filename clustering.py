@@ -11,8 +11,9 @@ k = 3
 kmeans = KMeans(n_clusters = k, random_state=0).fit(df)
 df['Cluster']=kmeans.labels_
 
+
 fig, axes = plt.subplots(1, k, sharey=True)
-axes[0].set_ylabel('Clusters', fontsize=20)
+axes[0].set_ylabel('Coded Values', fontsize=20)
 
 for i in range(k):
      plt.sca(axes[i])
