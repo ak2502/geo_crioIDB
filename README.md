@@ -11,3 +11,5 @@ This is my project for #IBelieveinDoing Projects Edition program from Crio.Do
 4) Finding a suitable K using trial and error
 
 5) Plotting Boxplot and making inference for the desired value of K
+
+6) The value of K=3.
