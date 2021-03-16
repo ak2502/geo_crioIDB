@@ -2,7 +2,7 @@
 
 This is my project for #IBelieveinDoing Projects Edition program from Crio.Do
 
-1) Filter and cleaned the existing dataset 
+1) Filter and cleaned the existing dataset by selecting suitable attributes and handling NaN values.
    Saving the cleaned dataset as csv file
    
 2) Plotiing the cleaned data using boxplot
