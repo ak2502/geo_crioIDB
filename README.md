@@ -12,4 +12,4 @@ This is my project for #IBelieveinDoing Projects Edition program from Crio.Do
 
 5) Plotting Boxplot and making inference for the desired value of K
 
-6) The value of K=3.
+6) The optimal value of K=3.
