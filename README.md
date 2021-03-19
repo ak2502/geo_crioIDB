@@ -13,3 +13,5 @@ This is my project for #IBelieveinDoing Projects Edition program from Crio.Do
 5) Plotting Boxplot and making inference for the desired value of K
 
 6) The optimal value of K=3.
+
+7) Using  HERE Geocoding & Search API to get Geolocational Data.
