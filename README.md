@@ -20,3 +20,14 @@ This is my project for #IBelieveinDoing Projects Edition program from Crio.Do
 
 9) Cleaning the collected data.
 
+10) Count of grocery stores, restaurants, gyms etc. around each residential location
+   
+   position.lat  position.lng  Cafes  Department Stores  Gyms
+0      19.12548      72.91935     13                  4    16
+1      19.12339      72.91274     20                  5    20
+2      19.11933      72.91227     20                  6    20
+3      19.11098      72.89882      7                  5    15
+4      19.12057      72.88556     12                  2    20
+5      19.11746      72.88374     16                  2    20
+6      19.16275      72.93285     11                  5     6
+7      19.11748      72.88025     15                  3    18
