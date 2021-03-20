@@ -22,14 +22,7 @@ This is my project for #IBelieveinDoing Projects Edition program from Crio.Do
 
 10) Count of grocery stores, restaurants, gyms etc. around each residential location
    
-|    |   position.lat |   position.lng |   Cafes |   Department Stores |   Gyms |
-|----|----------------|----------------|---------|---------------------|--------|
-|  0 |        19.1255 |        72.9193 |      13 |                   4 |     16 |
-|  1 |        19.1234 |        72.9127 |      20 |                   5 |     20 |
-|  2 |        19.1193 |        72.9123 |      20 |                   6 |     20 |
-|  3 |        19.111  |        72.8988 |       7 |                   5 |     15 |
-|  4 |        19.1206 |        72.8856 |      12 |                   2 |     20 |
-|  5 |        19.1175 |        72.8837 |      16 |                   2 |     20 |
-|  6 |        19.1627 |        72.9329 |      11 |                   5 |      6 |
-|  7 |        19.1175 |        72.8803 |      15 |                   3 |     18 |
+
+11) Applied K-Means on API dataset
+
 
