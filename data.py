@@ -6,6 +6,8 @@ data = [{"title":"Dharamraj","id":"here:pds:place:356te7ug-aab7da0959a549568e2d5
 
 d=json_normalize(data)
 
-print(d)
+d2=d[['title','address.label','distance','access','position.lat','position.lng','address.postalCode','contacts','id']]
 
 d.to_csv('apartment.csv')
+d2.to_csv('cleaned_apartment.csv')
+
