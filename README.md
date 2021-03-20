@@ -17,3 +17,6 @@ This is my project for #IBelieveinDoing Projects Edition program from Crio.Do
 7) Using  HERE Geocoding & Search API to get Geolocational Data.
 
 8) Collecting residential locations around IIT Bombay.
+
+9) Cleaning the collected data.
+
