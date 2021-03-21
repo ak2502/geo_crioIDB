@@ -7,8 +7,10 @@ from sklearn.cluster import KMeans
 import random
 import numpy as np
 import pandas as pd
+import folium
 
-url = 'https://discover.search.hereapi.com/v1/discover?in=circle:19.1334,72.9133;r=5000&q=apartment&apiKey=uJHMEjeagmFGldXp661-pDMf4R-PxvWIu7I68UjYC5Q'
+
+url = 'https://discover.search.hereapi.com/v1/discover?in=circle:19.1334,72.9133;r=10000&q=apartment&apiKey=uJHMEjeagmFGldXp661-pDMf4R-PxvWIu7I68UjYC5Q'
 data = requests.get(url).json()
 d=json_normalize(data['items'])
 
@@ -61,3 +63,36 @@ df_final['Cluster']=kmeans.labels_
 df_final['Cluster']=df_final['Cluster'].apply(str)
 
 print(tabulate(df_final,headers='keys',tablefmt='github'))
+
+
+#define coordinates of the college
+map_bom=folium.Map(location=[19.1334,72.9133],zoom_start=12)
+# instantiate a feature group for the incidents in the dataframe
+locations = folium.map.FeatureGroup()
+# set color scheme for the clusters
+def color_producer(cluster):
+    if cluster=='0':
+        return 'green'
+    elif cluster=='1':
+        return 'orange'
+    else:
+        return 'red'
+
+latitudes = list(df_final['position.lat'])
+longitudes = list(df_final['position.lng'])
+labels = list(df_final['Cluster'])
+names=list(d2['title'])
+for lat, lng, label,names in zip(latitudes, longitudes, labels,names):
+    folium.CircleMarker(
+            [lat,lng],
+            fill=True,
+            fill_opacity=1,
+            popup=folium.Popup(names, max_width = 300),
+            radius=5,
+            color=color_producer(label)
+        ).add_to(map_bom)
+
+# add locations to map
+map_bom.add_child(locations)
+ 
+map_bom.save("IIT Bombay.html")
