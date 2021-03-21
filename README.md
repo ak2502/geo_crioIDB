@@ -54,3 +54,5 @@ This is my project for #IBelieveinDoing Projects Edition program from Crio.Do
 | 10 |        19.1117 |        72.8751 |      20 |                   4 |     20 |         1 |
 | 11 |        19.1002 |        72.8813 |      20 |                   3 |     13 |         1 |
 
+
+12) Plotted the clustered residential places on map
