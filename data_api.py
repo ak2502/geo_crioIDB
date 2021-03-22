@@ -108,6 +108,7 @@ for lat, lng, label,names in zip(latitudes, longitudes, labels,names):
 
 # add locations to map
 map_bom.add_child(locations)
+folium.Marker([19.1334,72.9133],popup='IIT Bombay').add_to(map_bom)
 
 #saving the map 
 map_bom.save("map-IITBombay.html")
