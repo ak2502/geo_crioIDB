@@ -8,6 +8,5 @@ To access working map:
 - Run the data_api.py file using the following command: 
  ```
   python data_api.py
- 
-  ```
+ ```
 - Open map-IITBombay.html file in any web browser (preferably Chrome/Firefox)
